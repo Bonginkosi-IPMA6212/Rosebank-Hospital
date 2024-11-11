@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Standard Of Operating Procedures</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet'  href='SOPs.css'>
+    <link rel="icon" href="Main_Icon (2).png" type="image/png">
+   
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="I.T Security Guidelines.html" target="_blank"><b>Security Policy</b></a></li>
+            <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+            <li><a href="DRP.html" target="_blank" style="color: black;">Disaster Recovery Plan</a></li>
+            <li><a href="SOPs.html" target="_blank" style="color: black;">SOPs</a></li>
+            <li><button class="logout-button">Log Out</button></li>
+        </ul>
+
+        <div class="logo">
+            <img src="Main_Icon (2).png" alt="Hospital Logo">
+            <span class="span-1"><b><a href="index.html">Rosebank Hospital</a></b></span>
+        </div>
+
+        <ul class="nav-links">
+            <li class="dropdown">
+                <div class="policy">
+                <a href="#policies" style="color: black;">Policies</a>
+                <img src="arrow_drop_down_119dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="Dropdown_Symbol">
+                </div>
+                <ul class="dropdown-content">
+                    <li><a href="I.T Security Guidelines.html" target="_blank"><b>I.T Security Policy</b></a></li>
+                    <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="DRP.html" target="_blank" style="color: black;">Disaster Recovery Plan</a></li>
+            <li class="hideOnMobile"><a href="SOPs.html" style="color: black;">SOPs</a></li>
+            <li class="hideOnMobile"><button class="logout-button">Log Out</button></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+<section class="first-section">
+    <h1>This document outlines the standard operating procedures for IT managers at Rosebank Hospital</h1>
+</section>
+
+<section>
+    <h2>2. Responsibilities</h2>
+    <ul>
+        <li>Oversee IT operations and infrastructure.</li>
+        <li>Manage IT staff and resources effectively.</li>
+        <li>Ensure compliance with healthcare regulations.</li>
+        <li>Maintain data security and integrity.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>3. Incident Management</h2>
+    <ul>
+        <li>Log all IT incidents in the ticketing system.</li>
+        <li>Prioritize incidents based on severity and impact.</li>
+        <li>Assign incidents to appropriate staff for resolution.</li>
+        <li>Follow up on incidents until resolved and document outcomes.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>4. Change Management</h2>
+    <ul>
+        <li>Submit change requests for all significant IT modifications.</li>
+        <li>Conduct risk assessments before implementing changes.</li>
+        <li>Notify stakeholders of upcoming changes.</li>
+        <li>Review and document the results of changes.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>5. Data Backup and Recovery</h2>
+    <ul>
+        <li>Implement regular data backup schedules.</li>
+        <li>Test backup procedures quarterly.</li>
+        <li>Ensure offsite storage of critical backups.</li>
+        <li>Establish a disaster recovery plan.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>6. Staff Training</h2>
+    <ul>
+        <li>Conduct regular training sessions on IT policies and procedures.</li>
+        <li>Provide onboarding for new IT staff.</li>
+        <li>Encourage continuous learning and professional development.</li>
+    </ul>
+</section>
+<br>
+
+<footer>
+    <b>
+    <div class="div-main">
+        <div class="div1">
+            <p class="footer1">&#169 2024 Rosebank Hospital. All rights reserved.</p>
+            <br>
+            <p>
+                <a href="contact-us.html" style="text-decoration: none; color: white;" target="_blank">Contact Us</a>
+            </p>
+        </div>
+        <div class="div2">
+            <p class="phone">Cell : 012 399 8014</p>
+            <br>
+            <p>Privacy Policy</p>
+        </div>
+        <div class="div3">
+            <p>Email : Support@Rosebank-Hospital.com</p>
+            <br>
+            <p>Terms & Conditions</p>
+            
+        </div>
+        <div class="div4" style="text-align: center; float: right;">
+            <p>
+            <img src="facebook_5968764.png" alt="facebook_logo" style="height: 40px;">
+            </p>
+            <p>
+            <img src="twitter_5968830.png" alt="twitter/X_logo" style="height: 40px;">
+            </p>
+            <p>
+            <img src="instagram_2111463.png" alt="Instagram_logo" style="height: 40px;">
+            </p>
+        </div>
+    </div>
+        </b>
+        
+</footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body { 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    
+}
+/*My Nav Bar*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(225,225,225,0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 75%;
+    padding: 12px;
+    color: black;
+}
+
+.sidebar a {
+    width: 75%;
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar a:hover {
+    background-color: #e01717;
+}
+
+.menu-button {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 2rem;
+    background-color: lightgray;
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    
+}
+
+.policy {
+    display: flex;
+}
+
+.policy img {
+    height: 11px;
+    margin-top: 16px;
+    transition: all 0.3s ease; 
+}
+
+.policy:hover img {
+    content: url('arrow_drop_up_119dp_000000_FILL0_wght400_GRAD0_opsz48.png');
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+}
+
+
+.span-1 a {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 40px;
+    left: 0;
+    border-radius: 4px;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.dropdown-content li {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+
+.dropdown-content li a {
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    
+
+}
+
+.dropdown-content li a:hover {
+    color: lightgray;
+    background-color: #e01717; 
+}
+
+
+.dropdown-content li:hover {
+    background-color: #e01717;
+    color: white;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.logout-button {
+    background-color: rgb(46, 42, 42); 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+
+
+
+/*My Hero Section*/
+
+.hero {
+    background-color: #e01717;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    margin-top: 100px;
+    background-image: url(stethoscope-rests-against-vibrant-red-surface-emphasizing-its-importance-medical-practice-patient-care_86390-47886.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+/*
+Link to background image on hero section :
+https://www.freepik.com/premium-ai-image/stethoscope-rests-against-vibrant-red-surface-emphasizing-its-importance-medical-practice-patient-care_294865557.htm#fromView=search&page=1&position=26&uuid=1ed18c87-3718-44c6-bc03-c04cc454d0a1*/
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/*Secondary section for my divs*/
+
+.quick-links {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+    background-color: white;
+    text-decoration: none;
+    width: 100%;
+}
+
+.quick-links a {
+    color: black;  
+    text-decoration: none;
+}
+
+.link-box {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 25%;
+    transition: transform 0.3s ease;
+    background-image: url(abstract-red-light-lines-pipe-speed-zoom-black-background-technology_1142-8936.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link-box h2 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.link-box a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.link-box a:hover {
+    text-decoration: none;
+    transform: scale(1.05);
+    color: red;
+}
+
+/*my footer */
+footer {
+    background-color:#e01717;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+.div-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.phone {
+    margin-right: 64px;
+}
+
+.div4 {
+    align-items: center;
+}
+
+@media (max-width: 960px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .menu-button {
+        display: block;
+    }
+    .quick-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .link-box {
+        margin-bottom: 20px;
+        width: 80%;
+        padding: 40px;
+        height: 229px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .div-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .div3 {
+        margin-bottom: 18px;
+    }
+    .div4 {
+        display: flex;
+    }
+    .div4 p {
+        padding: 12px;
+    }
+}

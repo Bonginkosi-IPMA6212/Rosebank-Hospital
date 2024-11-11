@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Recovery Plan</title>
+    <link rel="stylesheet" href="DRP.css">
+    <link rel="icon" href="Main_Icon (2).png" type="image/png">
+    
+</head>
+<body>
+    
+    <nav>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+            <li><a href="I.T Security Guidelines.html" target="_blank"><b>Security Policy</b></a></li>
+            <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+            <li><a href="Acquisition Procedures.html" target="_blank"><b>Acquisition Procedures</b></a></li>
+            <li><a href="Service-Desk Procedures.html" target="_blank"><b>Service Desk Procedures</b></a></li>
+            <li><a href="DRP.html" target="_blank"><b>Disaster Recovery Plan</b></a></li>
+            <li><a href="SOPs.html" target="_blank"><b>SOPs</b></a></li>
+            <li><button class="logout-button">Log Out</button></li>
+        </ul>
+
+        <div class="logo">
+            <img src="Main_Icon (2).png" alt="Hospital Logo">
+            <span class="span-1"><b><a href="index.html">Rosebank Hospital</a></b></span>
+        </div>
+
+        <ul class="nav-links">
+            <li class="dropdown">
+                <div class="policy">
+                <a href="#policies" style="color: black;">Policies</a>
+                <img src="arrow_drop_down_119dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="Dropdown_Symbol">
+                </div>
+                <ul class="dropdown-content">
+                    <li><a href="I.T Security Guidelines.html" target="_blank"><b>Security Policy</b></a></li>
+                    <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+                </ul>
+            </li>
+            <li class="hideOnMobile"><a href="DRP.html" style="color: black;">Disaster Recovery Plan</a></li>
+            <li class="hideOnMobile"><a href="SOPs.html" target="_blank" style="color: black;">SOPs</a></li>
+            <li class="hideOnMobile"><button class="logout-button">Log Out</button></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+
+    <div class="Main-Div">
+        <div class="vertical-div">
+            <div class="V-div">
+                <h2 class="h2-center">Purpose</h2>
+                <ul>
+                    <li><b>Ensure Swift Recovery:</b> 
+                        Facilitate rapid restoration of Rosebank Hospital’s critical functions during and after a disaster.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Protect Patient Data:</b> 
+                        Safeguard patient information and ensure its recovery.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Recover IT Systems:</b>
+                        Restore essential IT systems and infrastructure to maintain hospital operations.
+                    </li>
+                    <br>
+                    <li>
+                        <b>Maintain Medical Operations:</b>
+                        Ensure continuity of medical services and patient care throughout the recovery process.
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <div class="V-div-2">
+                    <h2 class="h2-center">Scope</h2>
+                    <p><b>Coverage Includes</b></p>
+                    <ul>
+                        <li><b>I.T Infrastructure</b></li>
+                        <br>
+                        <li>Electronic Health Record (EHR)</li>
+                        <li>Communication Systems</li>
+                        <li>Medical Devices</li>
+                        <li>Patient Care Services</li>
+                        <br>
+                        <li><b>Physical Infrastructure</b></li>
+                        <br>
+                        <li>Power Supply</li>
+                        <li>Water Systems</li>
+                        <li>Medical Equipment</li>
+                        <li>Facility Repairs & Maintenance</li>
+                    </ul>
+                
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <h2 class="H2-Headers"><u>Risk Assessment and Impact Analysis</u></h2>
+        <div class="Third-Div">
+            
+            <h3><u>Risks</u></h3>
+            <ul>
+                <p><b>Natural Disasters:</b> Earthquakes and floods</p>
+                <p><b>Cyber Threats:</b> Ransomware, Malware Infection and data breaches</p>
+                <p><b>Utility Failures:</b> Water supply disruption & Power outages</p>
+                <p><b>Internal Disasters:</b> Fire, hazardous chemical spills</p>
+            </ul>
+            <h3><u>Impact</u></h3>
+            <ul>
+                <p><b>Patient Care:</b> Disruption of critical care services and delay in important  medical procedures</p>
+                <p><b>Data Integrity:</b> Loss of patient records, breach of sensitive/confidential information</p>
+                <p><b>Operational Downtime:</b> Inability to perform surgeries, diagnostic tests, or  attend to other emergency services</p>
+                <p><b>Financial Impact:</b> Increased costs due to downtime, loss of revenue, potential legal liabilities</p>
+                <p><b>Public Image :</b> Damage to the hospital's reputation if services are compromised</p>
+            </ul>
+        </div>
+
+        <h2 class="H2-Headers"><u>Preventative Measures</u></h2>
+        <div class="Fourth-Div">
+            
+            <div class="Fourth-Div-1">
+            <h3><u>I.T Infrastructure</u></h3>
+                <ul>
+                    <li>
+                        Conduct regular backups of the critical data to our backup server and offsite location.
+                    </li>
+                    <li>Implementation of advanced cybersecurity measures, including IDS, firewalls, encryption, and multi-factor authentication.
+                    </li>
+                    <li>Conduct routine updates and maintenance of all our IT systems to ensure they are up to date with the latest security updates/packages.
+                    </li>
+                </ul>
+            </div>
+            <div class="Fourth-Div-2">
+                <h3><u>Physical Infrastructure</u></h3>
+                    <ul>
+                        <li>
+                            Installation of backup generators to ensure continuous power supply.
+                        </li>
+                        <li>Securing medical equipment and critical infrastructure against potential damage from natural disasters.
+                        </li>
+                        <li>Regular maintenance of plumbing and electrical systems to prevent unexpected failures.
+                        </li>
+                    </ul>
+            </div>
+    </div>
+
+        <h2 class="H2-Headers"><u>Training & Drills</u></h2>
+        <div class="Fifth-Div">
+            
+            <h3><u>Regular Emergency Response Drills</u></h3>
+            <p>Conduct frequent disaster recovery simulations, such as fire evacuation, system failures, or cybersecurity breaches, to ensure that personnel are well-versed in emergency protocols. simulations should be done at least quarterly to maintain preparation.</p>
+            <h3><u>I.T Disaster Recovery Training</u></h3>
+            <p>The hospital's technical team must recieve specialist IT training with an emphasis on data restoration techniques, system backups, and making sure that vital medical systems, such as the Electronic Health Record (EHR) system, can be quickly restored following a disaster.</p>
+            <h3><u>Cyber Awareness Training</u></h3>
+            <p>To make sure that every department is aware of its precise duties in the event of a crisis, create training programs that are suited to the various tasks within the hospital (such as clinical staff, the IT team, and administrative people).</p>
+            <h3><u>Table-Top Exercises</u></h3>
+            <p>Staff members can study the DRP in a relaxed setting by doing tabletop activities that mimic various crisis situations. This eliminates the requirement for extensive drills and guarantees that staff members comprehend recovery procedures while also assisting in identifying plan deficiencies.</p>
+        </div>
+        <h2 class="H2-Headers"><u>Communication Strategy</u></h2>
+        <div class="Sixth-Div">
+            <div class="Sixth-Div-1">
+                <h3><u>Internal Communication</u></h3>
+                <ul>
+                    <li>
+                        Send an emergency alert via email, SMS, and overhead announcements to all hospital staff.
+                    </li>
+                    <li>
+                        Regular updates via email and internal communication channels every hour or as needed.
+                    </li>
+                    <li>
+                        Department leads to hold hourly briefings with their teams to ensure all staff are informed and prepared.
+                    </li>
+                </ul>
+            </div>
+            <div class="Sixth-Div-2">
+                <h3><u>External Communication</u></h3>
+                <ul>
+                    <li>
+                        Utilize the hospital’s automated notification system to inform patients and their families about the situation and any necessary changes to care plans.
+                    </li>
+                    <li>
+                        Issue press releases and updates through the hospital’s website, social media, and local media outlets.
+                    </li>
+                    <li>
+                        Communicate with partner hospitals, suppliers, and emergency services to coordinate efforts and resources.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <b>
+        <div class="div-main">
+            <div class="div1">
+                <p class="footer1">&#169 2024 Rosebank Hospital. All rights reserved.</p>
+                <br>
+                <p>
+                    <a href="contact-us.html" style="text-decoration: none; color: white;" target="_blank">Contact Us</a>
+                </p>
+            </div>
+            <div class="div2">
+                <p class="phone">Cell : 012 399 8014</p>
+                <br>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="div3">
+                <p>Email : Support@Rosebank-Hospital.com</p>
+                <br>
+                <p>Terms & Conditions</p>
+                
+            </div>
+            <div class="div4" style="text-align: center; float: right;">
+                <p>
+                <img src="facebook_5968764.png" alt="facebook_logo" style="height: 40px;">
+                </p>
+                <p>
+                <img src="twitter_5968830.png" alt="twitter/X_logo" style="height: 40px;">
+                </p>
+                <p>
+                <img src="instagram_2111463.png" alt="Instagram_logo" style="height: 40px;">
+                </p>
+            </div>
+        </div>
+            </b>
+            
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+

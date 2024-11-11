@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME | Rosebank Hospital</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Main_Icon (2).png" type="image/png">
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+<body>
+    
+        <nav>
+
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="I.T Security Guidelines.html" target="_blank"><b>Security Policy</b></a></li>
+                <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+                <li><a href="DRP.html" target="_blank" style="color: black;">Disaster Recovery Plan</a></li>
+                <li><a href="SOPs.html" target="_blank" style="color: black;">SOPs</a></li>
+                <li><button class="logout-button">Log Out</button></li>
+            </ul>
+
+            <div class="logo">
+                <img src="Main_Icon (2).png" alt="Hospital Logo">
+                <span class="span-1"><b><a href="index.html">Rosebank Hospital</a></b></span>
+            </div>
+
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <div class="policy">
+                    <a href="#policies" style="color: black;">Policies</a>
+                    <img src="arrow_drop_down_119dp_000000_FILL0_wght400_GRAD0_opsz48.png" alt="Dropdown_Symbol">
+                    </div>
+                    <ul class="dropdown-content">
+                        <li><a href="I.T Security Guidelines.html" target="_blank"><b>Security Policy</b></a></li>
+                        <li><a href="Acceptable Use Policy.html" target="_blank"><b>Acceptable Use Policy</b></a></li>
+                    </ul>
+                </li>
+                <li class="hideOnMobile"><a href="DRP.html" target="_blank" style="color: black;">Disaster Recovery Plan</a></li>
+                <li class="hideOnMobile"><a href="SOPs.html" target="_blank" style="color: black;">SOPs</a></li>
+                <li class="hideOnMobile"><button class="logout-button">Log Out</button></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="48px" fill="#000000"><path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+    
+
+    <div class="hero">
+        <h1>Welcome To Your <i><u>R.H</u></i> Portal</h1>
+        <p>Access important updates, resources, and tools to help you work efficiently.</p>
+    </div>
+
+    <div class="quick-links">
+        <a href="#employee-resources"  target="_blank">
+        <div class="link-box">
+            <h2>Department Structure</h2>
+            <p>Rosebank Hospital's I.T Departmental Structure</p>
+            <a href="#employee-resources">View Structure</a>
+        </div>
+        </a>
+        <a href="Acquisition Procedures.html" target="_blank">
+        <div class="link-box">
+            <h2>Acquistion Procedures</h2>
+            <p>View Rosebank Hospital's Acquisition Procedures</p>
+            <a href="Acquisition Procedures.html" target="_blank">View Procedures</a>
+        </div>
+        </a>
+        <a href="Service-Desk Procedures.html" target="_blank">
+        <div class="link-box">
+            <h2>Service-Desk Procedures</h2>
+            <p>View Rosebank Hospital's Service Desk Procedures</p>
+            <a href="Service-Desk Procedures.html" target="_blank">View Procedures</a>
+        </div>
+        </a>
+    </div>
+
+    <h1 style="text-align: center;">Group Members Of Rosebank Hospital</h1>
+
+    <section class="container">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Mahlatse Modiba</h3>
+                       <p class="card__description"><b><i>ST10247857</i></b></p>
+                       <p class="card__description"><b>Recovery Specialist</b></p>
+                       
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/avatar-5.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Mmashela Shima</h3>
+                       <p class="card__description"><b><i>ST10374480</i></b></p>
+                       <p class="card__description"><b>Network Architecture</b></p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/avatar-1.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Bonginkosi Mathebula</h3>
+                       <p class="card__description"><b><i>ST10131151</i></b></p>
+                       <p class="card__description"><b>Project Manager</b></p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+     
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/avatar-3.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Muofhe Lambani</h3>
+                       <p class="card__description"><b><i>ST10363336</i></b></p>
+                       <p class="card__description"><b>Configuration Specialist</b></p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+
+                 <article class="card__article swiper-slide">
+                    <div class="card__image">
+                       <img src="assets/img/avatar-2.png" alt="image" class="card__img">
+                       <div class="card__shadow"></div>
+                    </div>
+     
+                    <div class="card__data">
+                       <h3 class="card__name">Terence Monama</h3>
+                       <p class="card__description"><b><i>ST10405691</i></b></p>
+                       <p class="card__description"><b>Software Specialist</b></p>
+     
+                       <a href="#" class="card__button">View More</a>
+                    </div>
+                 </article>
+              </div>
+           </div>
+
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+           </div>
+
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
+     
+     <!--=============== SWIPER JS ===============-->
+     <script src="assets/js/swiper-bundle.min.js"></script>
+
+     <!--=============== MAIN JS ===============-->
+     <script src="assets/js/main.js"></script>
+
+    <footer>
+        <b>
+        <div class="div-main">
+            <div class="div1">
+                <p class="footer1">&#169 2024 Rosebank Hospital. All rights reserved.</p>
+                <br>
+                <p>
+                    <a href="contact-us.html" style="text-decoration: none; color: white;" target="_blank">Contact Us</a>
+                </p>
+            </div>
+            <div class="div2">
+                <p class="phone">Cell : 012 399 8014</p>
+                <br>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="div3">
+                <p>Email : Support@Rosebank-Hospital.com</p>
+                <br>
+                <p>Terms & Conditions</p>
+                
+            </div>
+            <div class="div4" style="text-align: center; float: right;">
+                <p>
+                <img src="/facebook_5968764.png" alt="facebook_logo" style="height: 40px;">
+                </p>
+                <p>
+                <img src="twitter_5968830.png" alt="twitter/X_logo" style="height: 40px;">
+                </p>
+                <p>
+                <img src="instagram_2111463.png" alt="Instagram_logo" style="height: 40px;">
+                </p>
+            </div>
+        </div>
+            </b>
+            
+    </footer>
+
+
+    
+</body>
+</html>
